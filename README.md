@@ -36,7 +36,7 @@ autoreplyCmd       unix    -       n       n       -       -       pipe
 3.
 Add to /etc/postfix/virtual :
 
-autoreply@moldiscovery.com              autoreply@autoreplyCmd.your-domain
+autoreply@your-domain              autoreply@autoreplyCmd.your-domain
 
 4.
 Add to /etc/postfix/transport :
@@ -79,7 +79,7 @@ allow postfix_pipe_t postfix_etc_t:file { append write };
 # USAGE
 
 Activate/Deactivate autoreponder via email :
-Send an email to autoreply@moldiscovery.com and put in its body the following commands:
+Send an email to autoreply@your-domain and put in its body the following commands:
 
 #To Activate autoreply:
   autoreply: enable
